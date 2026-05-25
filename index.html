@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKO SAMMY AI • LAYANAN & SCRIPT PREMIUM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sammy: '#121212',
+                        aksen: '#facc15',
+                        abu: '#1f1f23',
+                        hijau: '#22c55e',
+                        biru: '#3b82f6',
+                        ungu: '#a855f7',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl cursor-pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-sammy to-abu text-gray-100 font-sans min-h-screen">
+    
+    <!-- HEADER -->
+    <header class="py-10 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-aksen text-shadow mb-2">
+                🔥 TOKO SAMMY AI 🔥
+            </h1>
+            <p class="text-gray-300 text-lg">Koleksi Script & Layanan Premium Terlengkap & Terpercaya</p>
+            <div class="mt-4 inline-block bg-aksen/20 text-aksen px-4 py-1 rounded-full text-sm font-semibold">
+                ⚡ KUALITAS PREMIUM • GARANSI BEBAS ERROR ⚡
+            </div>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="px-4 pb-16">
+        <div class="container mx-auto max-w-4xl">
+
+            <!-- DAFTAR PRODUK -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold text-center mb-8 text-white">📦 DAFTAR PRODUK & HARGA</h2>
+                
+                <div class="grid md:grid-cols-2 gap-4" id="produkList">
+                    
+                    <!-- ITEM PRODUK -->
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover" 
+                         data-barang="Jasa Bikin Jailbreak 3" data-harga="10.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">Jasa Bikin Jailbreak 3</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 10.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover"
+                         data-barang="Role Mem Ubot" data-harga="4.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">Role Mem Ubot</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 4.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover"
+                         data-barang="SC Cpanel" data-harga="8.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">SC Cpanel</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 8.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover"
+                         data-barang="SC Coin" data-harga="5.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">SC Coin</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 5.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover"
+                         data-barang="SC Jaseb" data-harga="5.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">SC Jaseb</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 5.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover"
+                         data-barang="SC Bug Kurogane" data-harga="10.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">SC Bug Kurogane</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 10.000</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-abu/80 backdrop-blur-sm p-5 rounded-lg border border-gray-700 card-hover md:col-span-2"
+                         data-barang="SC Bug X-Flowers" data-harga="15.000">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold text-lg">SC Bug X-Flowers</span>
+                            <span class="bg-hijau/20 text-hijau font-bold px-3 py-1 rounded">Rp 15.000</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="text-center text-gray-400 text-sm mt-4">💡 <i>Pilih barang terlebih dahulu</i></p>
+            </section>
+
+            <!-- CARA PEMBAYARAN -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-center mb-8 text-aksen">💳 CARA PEMBAYARAN</h2>
+                
+                <div class="bg-abu/80 backdrop-blur-sm p-6 rounded-lg border border-yellow-600/30 shadow-lg shadow-yellow-900/10">
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mb-8">
+                        
+                        <!-- DANA -->
+                        <div class="bg-gray-800 p-4 rounded-lg text-center border border-blue-500/30 payment-select" data-metode="DANA">
+                            <i class="fa fa-money text-blue-400 text-2xl mb-2"></i>
+                            <h3 class="font-bold text-lg mb-1">DANA</h3>
+                            <p class="text-xl font-mono font-semibold">08811397381</p>
+                        </div>
+
+                        <!-- GOPAY -->
+                        <div class="bg-gray-800 p-4 rounded-lg text-center border border-green-500/30 payment-select" data-metode="GOPAY">
+                            <i class="fa fa-wallet text-green-400 text-2xl mb-2"></i>
+                            <h3 class="font-bold text-lg mb-1">GOPAY</h3>
+                            <p class="text-xl font-mono font-semibold">08984356112</p>
+                        </div>
+
+                        <!-- OVO -->
+                        <div class="bg-gray-800 p-4 rounded-lg text-center border border-purple-500/30 payment-select" data-metode="OVO">
+                            <i class="fa fa-credit-card text-purple-400 text-2xl mb-2"></i>
+                            <h3 class="font-bold text-lg mb-1">OVO</h3>
+                            <p class="text-xl font-mono font-mono font-semibold">08811397381</p>
+                        </div>
+
+                    </div>
+
+                    <!-- CARA KONFIRMASI -->
+                    <div class="bg-black/40 p-5 rounded-lg border border-dashed border-red-500/50">
+                        <h3 class="text-center text-lg font-bold text-red-400 mb-3">📝 KONFIRMASI PEMBAYARAN</h3>
+                        <p class="text-center text-gray-300 mb-4">Setelah bayar, kirim <b>SS Bukti TF & Item</b> ke sini:</p>
+                        
+                        <div class="flex flex-col md:flex-row gap-4 justify-center">
+                            <a href="https://t.me/Senno_pepeng" id="linkTele" target="_blank" class="flex items-center justify-center gap-2 bg-biru/20 hover:bg-biru/30 text-biru px-4 py-2 rounded-md font-semibold transition opacity-50">
+                                <i class="fa fa-telegram"></i> BUKA TELEGRAM
+                            </a>
+                            <a href="https://wa.me/628811397381" id="linkWa" target="_blank" class="flex items-center justify-center gap-2 bg-hijau/20 hover:bg-hijau/30 text-hijau px-4 py-2 rounded-md font-semibold transition opacity-50">
+                                <i class="fa fa-whatsapp"></i> BUKA WHATSAPP
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black/40 py-6 px-4 text-center text-gray-500 text-sm">
+        <p>© 2026 Sammy AI Store • All Rights Reserved</p>
+        <p class="mt-1">Dibuat khusus oleh Professor Sammy / Kenzmydev</p>
+    </footer>
+
+    <!-- JAVASCRIPT UNTUK OTOMATIS PESAN -->
+    <script>
+        let barangPilih = "";
+        let hargaPilih = "";
+        let metodeBayar = "";
+
+        // Pilih Barang
+        document.querySelectorAll('#produkList > div').forEach(item => {
+            item.addEventListener('click', function() {
+                barangPilih = this.dataset.barang;
+                hargaPilih = this.dataset.harga;
+                perbaruiLink();
+                // Efek pilih
+                document.querySelectorAll('#produkList > div').forEach(i => i.classList.remove('border-aksen'));
+                this.classList.add('border-aksen');
+            });
+        });
+
+        // Pilih Pembayaran
+        document.querySelectorAll('.payment-select').forEach(item => {
+            item.addEventListener('click', function() {
+                metodeBayar = this.dataset.metode;
+                perbaruiLink();
+                // Efek pilih
+                document.querySelectorAll('.payment-select').forEach(i => i.classList.remove('border-aksen', 'bg-gray-700/50'));
+                this.classList.add('border-aksen', 'bg-gray-700/50');
+            });
+        });
+
+        // Fungsi Update Link agar pesan otomatis ada di chat
+        function perbaruiLink() {
+            if(barangPilih && metodeBayar && hargaPilih){
+                // Susun pesan sesuai format Tuan
+                const pesan = encodeURIComponent(`${barangPilih} telah melakukan pembayaran ke ${metodeBayar} dengan nominal ${hargaPilih} setelah itu tunggu admin membalasnya terimakasih`);
+                
+                // Ubah link Telegram & WhatsApp agar membawa pesan tersebut
+                document.getElementById('linkTele').href = `https://t.me/Senno_pepeng?text=${pesan}`;
+                document.getElementById('linkWa').href = `https://wa.me/628811397381?text=${pesan}`;
+                
+                // Aktifkan tombol
+                document.getElementById('linkTele').classList.remove('opacity-50');
+                document.getElementById('linkWa').classList.remove('opacity-50');
+            }
+        }
+    </script>
+
+</body>
+                          </html>
+                          
